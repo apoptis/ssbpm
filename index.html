@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ladder demo page</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="css/chat.css" type="text/css"/>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!--[if lt IE 9]>
+    	<script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="fullcontain">
+		<div id="userlist">
+            <ul>
+                <li class="hasmenu"><span class="flair flair-bowserbrawl"/>user0</li>
+                <li><span class="flair flair-bowsermelee"/>user1</li>
+                <li><span class="flair flair-charizardbrawl"/>user2</li>
+                <li><span class="flair flair-diddybrawl"/>user3</li>
+                <li><span class="flair flair-dk64"/>user4</li>
+                <li><span class="flair flair-dkbrawl"/>user5</li>
+                <li><span class="flair flair-dkmelee"/>user6</li>
+                <li><span class="flair flair-drmariomelee"/>user7</li>
+                <li><span class="flair flair-falcobrawl"/>user8</li>
+                <li><span class="flair flair-falcomelee"/>user9</li>
+                <li><span class="flair flair-falcon64"/>user10</li>
+                <li><span class="flair flair-falconbrawl"/>user11</li>
+                <li><span class="flair flair-falconmelee"/>user12</li>
+                <li><span class="flair flair-fox64"/>user13</li>
+                <li><span class="flair flair-foxbrawl"/>user14</li>
+                <li><span class="flair flair-foxmelee"/>user15</li>
+                <li><span class="flair flair-ganonbrawl"/>userfix1</li>
+                <li><span class="flair flair-ganonmelee"/>userfix2</li>
+                <li><span class="flair flair-greninja"/>user16</li>
+                <li><span class="flair flair-gwbrawl"/>user17</li>
+                <li><span class="flair flair-gwmelee"/>user18</li>
+                <li><span class="flair flair-icsbrawl"/>user19</li>
+                <li><span class="flair flair-icsmelee"/>user20</li>
+                <li><span class="flair flair-ikebrawl"/>user21</li>
+                <li><span class="flair flair-ivybrawl"/>user22</li>
+                <li><span class="flair flair-jiggly64"/>user23</li>
+                <li><span class="flair flair-jigglybrawl"/>user24</li>
+                <li><span class="flair flair-jigglymelee"/>user25</li>
+                <li><span class="flair flair-dededebrawl"/>user26</li>
+                <li><span class="flair flair-kirby64"/>user27</li>
+                <li><span class="flair flair-kirbybrawl"/>user28</li>
+                <li><span class="flair flair-kirbymelee"/>user29</li>
+                <li><span class="flair flair-link64"/>user30</li>
+                <li><span class="flair flair-linkbrawl"/>user31</li>
+                <li><span class="flair flair-linkmelee"/>user32</li>
+                <li><span class="flair flair-littlemac"/>user33</li>
+                <li><span class="flair flair-lucariobrawl"/>user34</li>
+                <li><span class="flair flair-lucasbrawl"/>user35</li>
+                <li><span class="flair flair-luigi64"/>user36</li>
+                <li><span class="flair flair-luigibrawl"/>user37</li>
+                <li><span class="flair flair-luigimelee"/>user38</li>
+                <li><span class="flair flair-mario64"/>user39</li>
+                <li><span class="flair flair-mariobrawl"/>user40</li>
+                <li><span class="flair flair-mariomelee"/>user41</li>
+                <li><span class="flair flair-marthbrawl"/>user42</li>
+                <li><span class="flair flair-marthmelee"/>user43</li>
+                <li><span class="flair flair-megaman"/>user44</li>
+                <li><span class="flair flair-metaknightbrawl"/>user45</li>
+                <li><span class="flair flair-mewtwobrawl"/>user46</li>
+                <li><span class="flair flair-mewtwomelee"/>user47</li>
+                <li><span class="flair flair-ness64"/>user48</li>
+                <li><span class="flair flair-nessbrawl"/>user49</li>
+                <li><span class="flair flair-nessmelee"/>user50</li>
+                <li><span class="flair flair-olimarbrawl"/>user51</li>
+                <li><span class="flair flair-peachbrawl"/>user52</li>
+                <li><span class="flair flair-peachmelee"/>user53</li>
+                <li><span class="flair flair-pichumelee"/>user54</li>
+                <li><span class="flair flair-pikachu64"/>userfix3</li>
+                <li><span class="flair flair-pikachubrawl"/>user55</li>
+                <li><span class="flair flair-pikachumelee"/>user56</li>
+                <li><span class="flair flair-pitbrawl"/>user57</li>
+                <li><span class="flair flair-pkmntrainerbrawl"/>user58</li>
+                <li><span class="flair flair-randombrawl"/>user59</li>
+                <li><span class="flair flair-robbrawl"/>user60</li>
+                <li><span class="flair flair-luna"/>user61</li>
+                <li><span class="flair flair-roybrawl"/>user62</li>
+                <li><span class="flair flair-roymelee"/>user63</li>
+                <li><span class="flair flair-samus64"/>user64</li>
+                <li><span class="flair flair-samusbrawl"/>user65</li>
+                <li><span class="flair flair-samusmelee"/>user66</li>
+                <li><span class="flair flair-sheikbrawl"/>user67</li>
+                <li><span class="flair flair-sheikmelee"/>user68</li>
+                <li><span class="flair flair-snakebrawl"/>user69</li>
+                <li><span class="flair flair-sonicbrawl"/>user70</li>
+                <li><span class="flair flair-squirtlebrawl"/>user81</li>
+                <li><span class="flair flair-toonlinkbrawl"/>user82</li>
+                <li><span class="flair flair-villager"/>user83</li>
+                <li><span class="flair flair-wariobrawl"/>user84</li>
+                <li><span class="flair flair-wariobrawl2"/>user85</li>
+                <li><span class="flair flair-wiifittrainer"/>user86</li>
+                <li><span class="flair flair-wolfbrawl"/>user87</li>
+                <li><span class="flair flair-yoshi64"/>user88</li>
+                <li><span class="flair flair-yoshibrawl"/>user89</li>
+                <li><span class="flair flair-yoshimelee"/>user90</li>
+                <li><span class="flair flair-younglinkmelee"/>user91</li>
+                <li><span class="flair flair-zeldabrawl"/>user92</li>
+                <li><span class="flair flair-zeldamelee"/>user93</li>
+                <li><span class="flair flair-zssbrawl"/>user94</li>
+                <li><span class="flair flair-swords"/>user95</li>
+                <li><span class="flair flair-trophy"/>user96</li>
+                <li><span class="flair flair-friendly"/>user97</li>
+                <li><span class="flair flair-beemo"/>user98</li>
+                <li><span class="flair flair-randall"/>user99</li>
+                <li><span class="flair flair-boshi"/>user100</li>
+                <li><span class="flair flair-psnshroom"/>user101</li>
+                <li><span class="flair flair-greenhiltsword"/>user102</li>
+                <li><span class="flair flair-pokeball"/>user103</li>
+                <li><span class="flair flair-1up"/>user104</li>
+                <li><span class="flair flair-skull"/>user105</li>
+                <li><span class="flair flair-controller"/>user106</li>
+                <li><span class="flair flair-tinygem"/>user107</li>
+                <li><span class="flair flair-smallgem"/>user108</li>
+                <li><span class="flair flair-medgem"/>user109</li>
+                <li><span class="flair flair-largegem"/>user110</li>
+                <li><span class="flair flair-largeblackgem"/>user111</li>
+                <li><span class="flair flair-largeredgem"/>user112</li>
+                <li><span class="flair flair-salt"/>user113</li>
+                <li><span class="flair flair-sandbag"/>user114</li>
+                <li><span class="flair flair-vgbc"/>user115</li>
+            </ul>
+        </div>
+    <!--</div>
+		<footer>
+			&copy; 2014
+		</footer>
+	</div>-->
+    
+</body>
+
+</html>

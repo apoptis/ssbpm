@@ -1,0 +1,423 @@
+/****************************
+scrollbar
+****************************/
+
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.4);
+    
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background: #3B3B3B;
+  color: #f4f4f4;
+}
+
+.fullcontain {
+  height: 400px;
+  width: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid #F2871D;
+  border-radius: 4px;
+}
+
+#userlist {
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+#userlist ul {
+  list-style: none;
+  margin-left: 0px;
+}
+
+#userlist ul li {
+  padding: 2px;
+  vertical-align: middle;
+  line-height: 20px;
+  -webkit-transition: background .7s;
+  -moz-transition: background .7s;
+  -ms-transition: background .7s;
+  -o-transition: background .7s;
+  transition: background .7s;
+}
+
+#userlist ul li:hover {
+  -moz-box-shadow:    inset 0 0 15px rgba(100,100,100, 0.5);
+  -webkit-box-shadow: inset 0 0 15px rgba(100,100,100, 0.5);
+  box-shadow:         inset 0 0 15px rgba(100,100,100, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#userlist span {
+  cursor: pointer;
+}
+
+/****************************
+ideas for unlock conditions
+• admin/mod icons
+• pass a certain rank
+• play certain amount of games as a char for their respective icons (leaves out a few chars, but could easily recolor or make new ones)
+• tournament placement icons (gold,silver,bronze)
+• custom icon for high donation
+• premium icons
+****************************/
+
+.flair {
+  border: none;
+  padding: 2px 0px 2px 24px;
+  height: 20px;
+  width: 20px;
+  background: url(../img/iconspritesheet.png) no-repeat -9999px -9999px;
+  background-color: transparent!important;
+}
+
+.flair-bowserbrawl {
+  background-position: 0 0;
+}
+.flair-bowsermelee {
+  background-position: 0 -42px;
+}
+.flair-charizardbrawl {
+  background-position: 0 -84px;
+}
+.flair-diddybrawl {
+  background-position: 0 -126px;
+}
+.flair-dk64 {
+  background-position: 0 -168px;
+}
+.flair-dkbrawl {
+  background-position: 0 -210px;
+}
+.flair-dkmelee {
+  background-position: 0 -252px;
+}
+.flair-drmariomelee {
+  background-position: 0 -294px;
+}
+.flair-falcobrawl {
+  background-position: 0 -336px;
+}
+.flair-falcomelee {
+  background-position: 0 -378px;
+}
+.flair-falcon64 {
+  background-position: 0 -420px;
+}
+.flair-falconbrawl {
+  background-position: 0 -462px;
+}
+.flair-falconmelee {
+  background-position: 0 -504px;
+}
+.flair-fox64 {
+  background-position: 0 -546px;
+}
+.flair-foxbrawl {
+  background-position: 0 -588px;
+}
+.flair-foxmelee {
+  background-position: 0 -630px;
+}
+.flair-ganonbrawl {
+  background-position: 0 -672px;
+}
+.flair-ganonmelee {
+  background-position: 0 -714px;
+}
+.flair-greninja {
+  background-position: 0 -758px;
+}
+.flair-gwbrawl {
+  background-position: 0 -801px;
+}
+.flair-gwmelee {
+  background-position: 0 -843px;
+}
+.flair-icsbrawl {
+  background-position: 0 -885px;
+}
+.flair-icsmelee {
+  background-position: 0 -927px;
+}
+.flair-ikebrawl {
+  background-position: 0 -971px;
+}
+.flair-ivybrawl {
+  background-position: 0 -1013px;
+}
+.flair-jiggly64 {
+  background-position: 0 -1055px;
+}
+.flair-jigglybrawl {
+  background-position: 0 -1097px;
+}
+.flair-jigglymelee {
+  background-position: 0 -1139px;
+}
+.flair-dededebrawl {
+  background-position: 0 -1181px;
+}
+.flair-kirby64 {
+  background-position: 0 -1223px;
+}
+.flair-kirbybrawl {
+  background-position: 0 -1265px;
+}
+.flair-kirbymelee {
+  background-position: 0 -1307px;
+}
+.flair-link64 {
+  background-position: 0 -1349px;
+}
+.flair-linkbrawl {
+  background-position: 0 -1391px;
+}
+.flair-linkmelee {
+  background-position: 0 -1433px;
+}
+.flair-littlemac {
+  background-position: 0 -1475px;
+}
+.flair-lucariobrawl {
+  background-position: 0 -1517px;
+}
+.flair-lucasbrawl {
+  background-position: 0 -1559px;
+}
+.flair-luigi64 {
+  background-position: 0 -1601px;
+}
+.flair-luigibrawl {
+  background-position: 0 -1643px;
+}
+.flair-luigimelee {
+  background-position: 0 -1685px;
+}
+.flair-mario64 {
+  background-position: 0 -1727px;
+}
+.flair-mariobrawl {
+  background-position: 0 -1769px;
+}
+.flair-mariomelee {
+  background-position: 0 -1811px;
+}
+.flair-marthbrawl {
+  background-position: 0 -1853px;
+}
+.flair-marthmelee {
+  background-position: 0 -1895px;
+}
+.flair-megaman {
+  background-position: 0 -1939px;
+}
+.flair-metaknightbrawl {
+  background-position: 0 -1982px;
+}
+.flair-mewtwobrawl {
+  background-position: 0 -2024px;
+}
+.flair-mewtwomelee {
+  background-position: 0 -2067px;
+}
+.flair-ness64 {
+  background-position: 0 -2109px;
+}
+.flair-nessbrawl {
+  background-position: 0 -2151px;
+}
+.flair-nessmelee {
+  background-position: 0 -2193px;
+}
+.flair-olimarbrawl {
+  background-position: 0 -2235px;
+}
+.flair-peachbrawl {
+  background-position: 0 -2277px;
+}
+.flair-peachmelee {
+  background-position: 0 -2319px;
+}
+.flair-pichumelee {
+  background-position: 0 -2361px;
+}
+.flair-pikachu64 {
+  background-position: 0 -2403px;
+}
+.flair-pikachubrawl {
+  background-position: 0 -2445px;
+}
+.flair-pikachumelee {
+  background-position: 0 -2487px;
+}
+.flair-pitbrawl {
+  background-position: 0 -2529px;
+}
+.flair-pkmntrainerbrawl {
+  background-position: 0 -2571px;
+}
+.flair-randombrawl {
+  background-position: 0 -2613px;
+}
+.flair-robbrawl {
+  background-position: 0 -2655px;
+}
+.flair-luna {
+  background-position: 0 -2699px;
+}
+.flair-roybrawl {
+  background-position: 0 -2742px;
+}
+.flair-roymelee {
+  background-position: 0 -2786px;
+}
+.flair-samus64 {
+  background-position: 0 -2829px;
+}
+.flair-samusbrawl {
+  background-position: 0 -2871px;
+}
+.flair-samusmelee {
+  background-position: 0 -2913px;
+}
+.flair-sheikbrawl {
+  background-position: 0 -2955px;
+}
+.flair-sheikmelee {
+  background-position: 0 -2997px;
+}
+.flair-snakebrawl {
+  background-position: 0 -3039px;
+}
+.flair-sonicbrawl {
+  background-position: 0 -3081px;
+}
+.flair-squirtlebrawl {
+  background-position: 0 -3123px;
+}
+.flair-toonlinkbrawl {
+  background-position: 0 -3165px;
+}
+.flair-villager {
+  background-position: 0 -3207px;
+}
+.flair-wariobrawl {
+  background-position: 0 -3249px;
+}
+.flair-wariobrawl2 {
+  background-position: 0 -3291px;
+}
+.flair-wiifittrainer {
+  background-position: 0 -3333px;
+}
+.flair-wolfbrawl {
+  background-position: 0 -3375px;
+}
+.flair-yoshi64 {
+  background-position: 0 -3417px;
+}
+.flair-yoshibrawl {
+  background-position: 0 -3459px;
+}
+.flair-yoshimelee {
+  background-position: 0 -3501px;
+}
+.flair-younglinkmelee {
+  background-position: 0 -3543px;
+}
+.flair-zeldabrawl {
+  background-position: 0 -3585px;
+}
+.flair-zeldamelee {
+  background-position: 0 -3627px;
+}
+.flair-zssbrawl {
+  background-position: 0 -3669px;
+}
+.flair-swords {
+  background-position: 0 -3711px;
+}
+.flair-trophy {
+  background-position: 0 -3753px;
+}
+.flair-friendly {
+  background-position: 0 -3795px;
+}
+.flair-beemo {
+  background-position: 0 -3837px;
+}
+.flair-randall {
+  background-position: 0 -3879px;
+}
+.flair-boshi {
+  background-position: 0 -3921px;
+}
+.flair-psnshroom {
+  background-position: 0 -3963px;
+}
+.flair-greenhiltsword {
+  background-position: 0 -4004px;
+}
+.flair-pokeball {
+  background-position: 0 -4047px;
+}
+.flair-1up {
+  background-position: 0 -4088px;
+}
+.flair-skull {
+  background-position: 0 -4129px;
+}
+.flair-controller {
+  background-position: 0 -4170px;
+}
+.flair-tinygem {
+  background-position: 0 -4216px;
+}
+.flair-smallgem {
+  background-position: 0 -4257px;
+}
+.flair-medgem {
+  background-position: 0 -4299px;
+}
+.flair-largegem {
+  background-position: 0 -4341px;
+}
+.flair-largeblackgem {
+  background-position: 0 -4384px;
+}
+.flair-largeredgem {
+  background-position: 0 -4426px;
+}
+.flair-salt {
+  background-position: 0 -4467px;
+}
+.flair-sandbag {
+  background-position: 0 -4508px;
+}
+.flair-vgbc {
+  background-position: 0 -4550px;
+}
+/*********************
+footer
+*********************/
+
+footer {
+  
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'edo';
+    src: url('edo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background: url("../img/nami.png");
+  color: #f4f4f4;
+}
+
+.pikaplaybtn {
+  font-family: 'edo';
+  background: url("../img/pikaplaybtn.gif") no-repeat 0px;
+  font-size: 30px;
+  margin-left: 17px;
+  padding-left: 94px;
+  padding-right: 15px;
+  height: 54px;
+  width: 237px;
+  line-height: 56px;
+  cursor: pointer;
+  color: #222;
+}
+
+.pikaplaybtn:hover {
+  background: url("../img/pikaplaybtn-hover.gif") no-repeat 0px;
+}
+
+.pikaplaybtn-alt1 {
+  font-family: 'edo';
+  background: url("../img/pikaplaybtn-alt1.gif") no-repeat 0px;
+  font-size: 30px;
+  margin-left: 17px;
+  padding-left: 94px;
+  padding-right: 15px;
+  height: 54px;
+  width: 237px;
+  line-height: 56px;
+  cursor: pointer;
+  color: #222;
+}
+
+.pikaplaybtn-alt1:hover {
+  background: url("../img/pikaplaybtn-alt1-hover.gif") no-repeat 0px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
